@@ -1,4 +1,4 @@
-## customer-churn-analysis
+## Customer-Churn-Analysis
 
 ## Overview
 This project implements an **end-to-end machine learning solution** to predict whether a bank customer is likely to **leave the bank (churn)**.  
@@ -9,7 +9,6 @@ The repository demonstrates practical skills in:
 - Binary classification modeling
 - Model persistence and reproducible inference
 
----
 
 ## Business Problem
 Customer churn directly impacts revenue in the banking sector.  
@@ -19,7 +18,6 @@ The goal of this project is to **predict churn risk** based on customer attribut
 - `1` → Customer left the bank  
 - `0` → Customer retained  
 
----
 
 ## Dataset
 **Source:** `Churn_Modelling.csv`
@@ -31,7 +29,6 @@ Each record represents a bank customer with attributes such as:
 
 Non-predictive identifiers (`RowNumber`, `CustomerId`, `Surname`) are excluded during preprocessing.
 
----
 
 ## Technical Approach
 
@@ -43,7 +40,6 @@ Non-predictive identifiers (`RowNumber`, `CustomerId`, `Surname`) are excluded d
 - Scaled numerical features using **StandardScaler**
 - Split data into training and testing sets
 
----
 
 ### Model
 An **Artificial Neural Network (ANN)** built with **TensorFlow/Keras** for binary classification:
@@ -56,13 +52,11 @@ An **Artificial Neural Network (ANN)** built with **TensorFlow/Keras** for binar
 **Optimizer:** Adam  
 **Regularization:** EarlyStopping to prevent overfitting
 
----
 
 ### Model Outputs
 - Generates a **probability score (0–1)** indicating churn likelihood
 - Converts probability into a final churn decision
 
----
 
 ## Saved Artifacts
 To support consistent inference and deployment, the following artifacts are stored:
@@ -71,7 +65,6 @@ To support consistent inference and deployment, the following artifacts are stor
 - Geography encoder (`onehot_encoder_geo.pkl`)
 - Feature scaler (`scaler.pkl`)
 
----
 
 ## Repository Structure
 - `experiments.ipynb` – Data preprocessing, feature engineering, and model training  
@@ -83,6 +76,4 @@ To support consistent inference and deployment, the following artifacts are stor
 - `label_encoder_gender.pkl` – LabelEncoder  
 - `onehot_encoder_geo.pkl` – OneHotEncoder  
 - `requirements.txt` – Dependencies  
-
----
 
